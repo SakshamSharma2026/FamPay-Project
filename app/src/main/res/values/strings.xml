@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">FamPay</string>
+    <string name="splash_name">fampay</string>
+
+
+    <string name="page1">Pay anytime, anywhere</string>
+    <string name="page2">Not just for adults</string>
+    <string name="terms_and_conditions">By clicking continue you are accepting to Fampay\'s \n Terms &amp; Conditions</string>
+
+
+
+
+    <string name="enter_otp">Enter OTP</string>
+    <string name="send_code">Enter the code to verify your number</string>
+
+
+
+    <!--    Login Activity-->
+
+
+    <string name="mobile_no">Enter your mobile number</string>
+    <string name="send_otp">We will send you SMS verification code</string>
+
+
+    <!--   Hello Activity-->
+
+
+    <string name="hello">Hello,Shadow!</string>
+    <string name="com_aad_kyc">Complete your Aadhaar KYC now</string>
+    <string name="using_fampay">and start using FamPay</string>
+
+    <!--    FamPay Card Activity-->
+
+    <string name="setup">Lets set you up!</string>
+    <string name="sign_up">Sign up to create your card for</string>
+    <string name="referral_code">Have a referral code</string>
+
+<!--    Aadhaar Number Activity-->
+    <string name="enter_aadhaar_no">Enter your Aadhaar number</string>
+    <string name="issue">I am having issue with Aadhaar</string>
+    <string name="otp_receive">You will receive OTP on your registered Mobile Number for the given Aadhaar number</string>
+    <string name="problem">Facing problem with Aadhaar OTP?</string>
+    <string name="con_kyc">Continue with minimum KYC</string>
+</resources>
