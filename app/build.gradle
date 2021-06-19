@@ -39,10 +39,14 @@ dependencies {
     implementation 'com.intuit.ssp:ssp-android:1.0.6'
     implementation 'com.intuit.sdp:sdp-android:1.0.6'
 
-    //pin
+    //PinView
     implementation 'io.github.chaosleung:pinview:1.4.4'
+
+    //Shimmer ImageView
     implementation 'com.wenhui:shimmer-imageview:0.4.0'
 
+
+    //Easy FlipView
     implementation 'com.wajahatkarim3.EasyFlipView:EasyFlipView:3.0.0'
 
 }
