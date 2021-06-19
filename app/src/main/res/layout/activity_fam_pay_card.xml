@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activites.FamPayCardActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:overScrollMode="never">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_gravity="top"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:id="@+id/ll"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:background="@color/gray_background"
+                    android:padding="@dimen/_20sdp"
+                    android:id="@+id/rl">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/splash_name"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_16ssp"
+                        android:id="@+id/text"
+                        style="@style/TextAppearance.MaterialComponents.Headline5"
+                        android:layout_centerHorizontal="true"
+                        />
+                    <ImageView
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_toEndOf="@id/text"
+                        android:src="@drawable/splash_bird"
+                        />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/setup"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_16ssp"
+                    android:layout_gravity="center"
+                    style="@style/TextAppearance.MaterialComponents.Headline5"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sign_up"
+                    android:textColor="#A9A9A9"
+                    android:textSize="@dimen/_10ssp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_gravity="center"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="+917777777777"
+                        android:textColor="#A9A9A9"
+                        android:id="@+id/number"
+                        android:textSize="@dimen/_10ssp"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:layout_gravity="center"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Change Number"
+                        android:textStyle="bold"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:textColor="#547387"
+                        android:layout_toEndOf="@+id/number"
+                        android:textSize="@dimen/_10ssp"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:layout_gravity="center"
+                        />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <com.wajahatkarim3.easyflipview.EasyFlipView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:flipOnTouch="true"
+                android:id="@+id/flipCard"
+                android:layout_below="@id/ll"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginTop="@dimen/_30sdp"
+                app:flipEnabled="true"
+                app:flipDuration="430"
+                app:flipFrom="left"
+                app:flipType="horizontal"
+                app:autoFlipBack="false">
+
+                <!-- Back Layout Goes Here -->
+                <include layout="@layout/card_back"/>
+
+                <!-- Front Layout Goes Here -->
+                <include layout="@layout/card_front"/>
+
+            </com.wajahatkarim3.easyflipview.EasyFlipView>
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/continue_btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="@dimen/_15sdp"
+        android:elevation="0dp"
+        app:cardElevation="0dp"
+        app:cardCornerRadius="@dimen/_30sdp"
+        app:cardBackgroundColor="#79D8D8D8"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/_8sdp"
+                android:text="@string/referral_code"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10ssp"
+                android:layout_gravity="center"
+                style="@style/TextAppearance.MaterialComponents.Headline6"
+                />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/continue_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardBackgroundColor="@color/black"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="5dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+
+            <ProgressBar
+                android:id="@+id/button_progress"
+                android:layout_width="21dp"
+                android:layout_height="21dp"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:layout_toStartOf="@id/button_text"
+                android:indeterminate="true"
+                android:indeterminateTint="#ffffff"
+                android:visibility="gone"
+                android:indeterminateTintMode="src_atop"
+                />
+
+            <TextView
+                android:id="@+id/button_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:padding="10dp"
+                android:gravity="center"
+                style="@style/TextAppearance.MaterialComponents.Headline5"
+                android:textColor="@color/white"
+                android:text="Continue"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

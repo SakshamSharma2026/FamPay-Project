@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/root"
+    tools:context=".activites.HelloActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/gray_background"
+        android:padding="@dimen/_20sdp"
+        android:id="@+id/rl">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/splash_name"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14ssp"
+            android:id="@+id/text"
+            android:layout_alignParentStart="true"
+            style="@style/TextAppearance.MaterialComponents.Headline5"
+            />
+        <ImageView
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_toEndOf="@id/text"
+            android:src="@drawable/splash_bird"
+            />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:elevation="0dp"
+            app:cardElevation="0dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            app:cardCornerRadius="@dimen/_30sdp"
+            app:cardBackgroundColor="@color/white"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingStart="@dimen/_12sdp"
+                    android:paddingEnd="@dimen/_12sdp"
+                    android:paddingTop="@dimen/_5sdp"
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:text="Help"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10ssp"
+                    android:layout_gravity="center"
+                    style="@style/TextAppearance.MaterialComponents.Headline6"
+                    />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hello"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="@dimen/_14ssp"
+            style="@style/TextAppearance.MaterialComponents.Headline6"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/com_aad_kyc"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="@dimen/_14ssp"
+            style="@style/TextAppearance.MaterialComponents.Headline6"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/using_fampay"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="@dimen/_14ssp"
+            style="@style/TextAppearance.MaterialComponents.Headline6"
+            />
+
+        <ImageView
+            android:layout_width="@dimen/_180sdp"
+            android:layout_gravity="center"
+            android:layout_marginTop="-10dp"
+            android:layout_height="@dimen/_80sdp"
+            android:src="@drawable/ic_kyc_start_ill_1"
+            />
+
+        <ImageView
+            android:layout_width="@dimen/_200sdp"
+            android:layout_gravity="center"
+            android:layout_marginTop="-30dp"
+            android:layout_height="@dimen/_250sdp"
+            android:src="@drawable/ic_kyc_start_ill_2"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:layout_gravity="center"
+                android:layout_height="@dimen/_25sdp"
+                android:src="@drawable/insurance"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="2 million+"
+                android:gravity="center"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:textSize="@dimen/_18ssp"
+                style="@style/TextAppearance.MaterialComponents.Headline6"
+                />
+        </LinearLayout>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Indians trust FamPay"
+            android:gravity="center"
+            android:textColor="#A9A9A9"
+            android:textSize="@dimen/_13ssp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="FamPay is a co-branded prepaid account issued by "
+            android:gravity="center"
+            android:textColor="#A9A9A9"
+            android:textSize="@dimen/_10ssp"
+            />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center"
+        android:id="@+id/continue_btn"
+        android:background="@drawable/bottom_curved"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="@dimen/_25sdp"
+        android:layout_height="@dimen/_55sdp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Continue"
+            style="@style/TextAppearance.MaterialComponents.Headline6"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12ssp"
+            />
+
+    </LinearLayout>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/layout"
+            android:background="@drawable/white_bottom_curved"
+            app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/up_arrow"
+                android:id="@+id/up_arrow"
+                android:layout_height="wrap_content"/>
+
+            <include
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/card_bottom"/>
+
+
+        </LinearLayout>
+
+
+
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

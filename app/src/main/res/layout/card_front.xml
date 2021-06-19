@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_150sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="0dp"
+    android:layout_gravity="center"
+    app:cardElevation="0dp"
+    android:layout_marginTop="@dimen/_20sdp"
+    app:cardBackgroundColor="#010101"
+    app:cardCornerRadius="@dimen/_8sdp"
+    android:layout_margin="@dimen/_15sdp"
+    android:layout_height="@dimen/_250sdp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <View
+                android:layout_width="15dp"
+                android:layout_marginTop="@dimen/_35sdp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="@dimen/_35sdp"
+                android:layout_height="match_parent"
+                android:background="@drawable/curved_border"
+                />
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/_30sdp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/cardLogo"
+                android:layout_marginTop="@dimen/_30sdp"
+                app:cardCornerRadius="@dimen/_5sdp"
+                android:layout_height="@dimen/_35sdp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:scaleType="centerCrop"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/credit_card"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                app:tint="#6BFFFFFF"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="@dimen/_35sdp"
+                android:layout_toEndOf="@id/cardLogo"
+                android:src="@drawable/nfc"/>
+
+                <com.wenhui.shimmerimageview.ShimmerImageView
+                    android:layout_width="@dimen/_70sdp"
+                    android:layout_height="@dimen/_70sdp"
+                    app:startAnimation="true"
+                    android:src="@drawable/splash_bird"
+                    android:layout_centerInParent="true"
+                    app:maskSpecs_maskMode="src_in"
+                    app:maskSpecs_dropOff="0.3"
+                    app:maskSpecs_maskColor="#EDEDED"
+                    app:maskSpecs_animationDuration="3000"
+                    app:maskSpecs_intensity="0.1"
+                    app:maskSpecs_startDelayed="0"
+                    />
+
+
+            <ImageView
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_60sdp"
+                app:tint="@color/white"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:layout_above="@id/platinum"
+                android:layout_marginBottom="-27dp"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/symbols"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="Platnium"
+                android:id="@+id/platinum"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:textSize="@dimen/_8ssp"
+                android:layout_alignParentBottom="true"
+                android:textColor="@color/white"/>
+
+        </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
