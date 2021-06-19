@@ -26,33 +26,40 @@ public class OnBoardingScreenActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_on_boarding_screen);
 
+
         //Hooks
-        viewPager = findViewById(R.id.viewPager);
-        dotsLayout = findViewById(R.id.dots);
-        continueBtn = findViewById(R.id.continue_btn);
+        initializeViews();
 
 
+
+        //Continue Button for sending the mobile number to next activity
         continueBtn.setOnClickListener(v ->{
             Intent intent = new Intent(OnBoardingScreenActivity.this,LoginActivity.class);
             startActivity(intent);
         });
 
+
+
         //Call Adapter
         appDescriptionSliderAdapter = new AppDescriptionSliderAdapter(this);
         viewPager.setAdapter(appDescriptionSliderAdapter);
 
+
+
         //Dots
         addDots(0);
         viewPager.addOnPageChangeListener(changeListener);
+
     }
 
-    public void skip(View view) {
-        startActivity(new Intent(getApplicationContext(), LoginActivity.class));
-        finish();
+    private void initializeViews() {
+        viewPager = findViewById(R.id.viewPager);
+        dotsLayout = findViewById(R.id.dots);
+        continueBtn = findViewById(R.id.continue_btn);
     }
 
-    private void addDots(int position)
-    {
+
+    private void addDots(int position) {
         dots = new TextView[2];
         dotsLayout.removeAllViews();
         for(int i=0;i<dots.length;i++) {
