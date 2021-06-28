@@ -8,11 +8,8 @@
     <string name="terms_and_conditions">By clicking continue you are accepting to Fampay\'s \n Terms &amp; Conditions</string>
 
 
-
-
     <string name="enter_otp">Enter OTP</string>
     <string name="send_code">Enter the code to verify your number</string>
-
 
 
     <!--    Login Activity-->
@@ -35,7 +32,7 @@
     <string name="sign_up">Sign up to create your card for</string>
     <string name="referral_code">Have a referral code</string>
 
-<!--    Aadhaar Number Activity-->
+    <!--    Aadhaar Number Activity-->
     <string name="enter_aadhaar_no">Enter your Aadhaar number</string>
     <string name="issue">I am having issue with Aadhaar</string>
     <string name="otp_receive">You will receive OTP on your registered Mobile Number for the given Aadhaar number</string>

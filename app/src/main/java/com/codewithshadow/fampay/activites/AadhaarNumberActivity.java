@@ -21,7 +21,7 @@ public class AadhaarNumberActivity extends AppCompatActivity {
 
         //Continue Button for  sending the user to next activity
         continueBtn.setOnClickListener( v -> {
-            Intent intent = new Intent(this,DashboardActivity.class);
+            Intent intent = new Intent(this,ApiScreenActivity.class);
             startActivity(intent);
         });
     }

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/_8sdp"
+    android:layout_margin="@dimen/_8sdp"
+    app:cardBackgroundColor="@color/white"
+    android:layout_height="@dimen/_250sdp">
+
+
+    <LinearLayout
+        android:layout_width="@dimen/_85sdp"
+        android:orientation="vertical"
+        android:id="@+id/transition_layout"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:layout_height="match_parent">
+        <androidx.cardview.widget.CardView
+            android:layout_width="@dimen/_62sdp"
+            android:layout_height="@dimen/_55sdp"
+            android:layout_margin="@dimen/_15sdp"
+            android:elevation="0dp"
+            android:id="@+id/card_remind_later"
+            android:background="?selectableItemBackground"
+            app:cardElevation="0dp"
+            app:cardBackgroundColor="@color/gray_background"
+            app:cardCornerRadius="@dimen/_10sdp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_margin="@dimen/_8sdp"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="@dimen/_18sdp"
+                    android:layout_height="@dimen/_18sdp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:layout_above="@id/txt_remind"
+                    android:src="@drawable/bell_small"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="remind later"
+                    android:gravity="center"
+                    android:id="@+id/txt_remind"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_8ssp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="@dimen/_62sdp"
+            android:layout_height="@dimen/_55sdp"
+            android:layout_margin="@dimen/_15sdp"
+            android:id="@+id/card_dismiss_now"
+            android:background="?selectableItemBackground"
+            app:cardBackgroundColor="@color/gray_background"
+            app:cardCornerRadius="@dimen/_10sdp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_margin="@dimen/_8sdp"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="@dimen/_18sdp"
+                    android:layout_height="@dimen/_18sdp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:layout_above="@id/txt_dismiss"
+                    android:src="@drawable/dissmiss"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="dismiss now"
+                    android:gravity="center"
+                    android:id="@+id/txt_dismiss"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_8ssp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        app:cardElevation="@dimen/_3sdp"
+        android:layout_gravity="end"
+        android:id="@+id/big_card"
+        android:elevation="@dimen/_3sdp"
+        app:cardCornerRadius="@dimen/_8sdp"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_margin="@dimen/_18sdp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/img"
+                android:adjustViewBounds="true"
+                android:src="@drawable/splash_bird"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                />
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_18ssp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_above="@id/item_text_2"
+                android:id="@+id/item_text_0"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/_20sdp"
+                />
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_12ssp"
+                android:textColor="@color/white"
+                android:id="@+id/item_text_2"
+                android:layout_centerHorizontal="true"
+                android:layout_above="@id/card_action_btn"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:text="This is a sample text for the subtitle that you\ncan add to contextual cards"
+                />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/_120sdp"
+                app:cardCornerRadius="@dimen/_5sdp"
+                android:id="@+id/card_action_btn"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_height="@dimen/_40sdp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Action"
+                    android:id="@+id/card_action_btn_text"
+                    android:textSize="@dimen/_14ssp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    />
+
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+</androidx.cardview.widget.CardView>

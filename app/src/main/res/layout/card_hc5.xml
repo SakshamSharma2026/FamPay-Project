@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/_8sdp"
+    android:layout_marginStart="@dimen/_10sdp"
+    android:layout_marginEnd="@dimen/_10sdp"
+    android:layout_marginTop="@dimen/_5sdp"
+    android:elevation="@dimen/_1sdp"
+    android:id="@+id/big_card"
+    app:cardElevation="@dimen/_1sdp"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="@dimen/_80sdp"
+            android:src="@drawable/splash_bird"
+            android:id="@+id/img"
+            android:layout_margin="@dimen/_8sdp"
+            android:layout_height="@dimen/_60sdp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save the streak"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_13ssp"
+            android:textStyle="bold"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:id="@+id/item_text_0"
+            android:layout_toEndOf="@id/img"
+            android:layout_centerVertical="true"
+            />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
